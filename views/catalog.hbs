@@ -1,0 +1,14 @@
+<section id="all-blogs-page">
+  <article class="all-blogs-title">
+    <h1>All Blogs</h1>
+  </article>
+  {{#if items}}
+  {{#each items}}
+  {{> catalogTemplate}}
+  {{/each}}
+  {{else}}
+  <article class="not-available-blogs">
+    <h1>No blogs created yet.</h1>
+  </article>
+  {{/if}}
+</section>
